@@ -18,6 +18,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var imgView3: UIImageView!
     @IBOutlet weak var imgView4: UIImageView!
     
+    @IBOutlet weak var btn1: UIButton!
+    @IBOutlet weak var btn2: UIButton!
+    @IBOutlet weak var btn3: UIButton!
+    @IBOutlet weak var btn4: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -65,6 +71,12 @@ class ViewController: UIViewController {
     func setPattern(){
         givenSequence = makeList(4)
         inputSequence = []
+        
+        btn1.isHidden = true
+        btn2.isHidden = true
+        btn3.isHidden = true
+        btn4.isHidden = true
+        
         imgView1.image = UIImage(named: String(givenSequence[0]));
         imgView2.image = UIImage(named: String(givenSequence[1]));
         imgView3.image = UIImage(named: String(givenSequence[2]));
@@ -75,6 +87,11 @@ class ViewController: UIViewController {
             self.imgView2.image = nil
             self.imgView3.image = nil
             self.imgView4.image = nil
+            
+            self.btn1.isHidden = false
+            self.btn2.isHidden = false
+            self.btn3.isHidden = false
+            self.btn4.isHidden = false
         }
     }
     

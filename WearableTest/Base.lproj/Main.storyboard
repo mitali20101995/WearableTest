@@ -75,6 +75,10 @@
                         <viewLayoutGuide key="safeArea" id="Uee-0j-aNJ"/>
                     </view>
                     <connections>
+                        <outlet property="btn1" destination="fKe-Dx-HsI" id="d9y-ua-o59"/>
+                        <outlet property="btn2" destination="hFB-qt-2c1" id="jg0-5Q-4aV"/>
+                        <outlet property="btn3" destination="TeK-3f-j7X" id="MIh-MS-Z2v"/>
+                        <outlet property="btn4" destination="cNS-dx-wvf" id="Ctr-rz-0RC"/>
                         <outlet property="imgView1" destination="Wkc-qD-iTy" id="nND-wq-DW5"/>
                         <outlet property="imgView2" destination="tzF-ag-K6q" id="PAr-pc-dkf"/>
                         <outlet property="imgView3" destination="8Gt-Tz-CT9" id="rKT-Hj-NfG"/>
