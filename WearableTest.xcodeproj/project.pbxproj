@@ -12,54 +12,55 @@
 		CEF8518D22DA4C7300EDB7CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF8518B22DA4C7300EDB7CD /* Main.storyboard */; };
 		CEF8518F22DA4C7300EDB7CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEF8518E22DA4C7300EDB7CD /* Assets.xcassets */; };
 		CEF8519222DA4C7300EDB7CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF8519022DA4C7300EDB7CD /* LaunchScreen.storyboard */; };
-		CEF8519722DA4C7300EDB7CD /* WearableTest WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CEF8519622DA4C7300EDB7CD /* WearableTest WatchKit App.app */; };
-		CEF8519D22DA4C7300EDB7CD /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF8519B22DA4C7300EDB7CD /* Interface.storyboard */; };
-		CEF8519F22DA4C7400EDB7CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEF8519E22DA4C7400EDB7CD /* Assets.xcassets */; };
-		CEF851A622DA4C7400EDB7CD /* WearableTest WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CEF851A522DA4C7400EDB7CD /* WearableTest WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		CEF851AB22DA4C7400EDB7CD /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF851AA22DA4C7400EDB7CD /* InterfaceController.swift */; };
-		CEF851AD22DA4C7400EDB7CD /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF851AC22DA4C7400EDB7CD /* ExtensionDelegate.swift */; };
-		CEF851AF22DA4C7400EDB7CD /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF851AE22DA4C7400EDB7CD /* NotificationController.swift */; };
-		CEF851B122DA4C7500EDB7CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEF851B022DA4C7500EDB7CD /* Assets.xcassets */; };
+		CEF851C722DA93E700EDB7CD /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF851C522DA93E700EDB7CD /* Interface.storyboard */; };
+		CEF851C922DA93E800EDB7CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEF851C822DA93E800EDB7CD /* Assets.xcassets */; };
+		CEF851D022DA93E800EDB7CD /* MemorizeThis Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CEF851CF22DA93E800EDB7CD /* MemorizeThis Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CEF851D522DA93E800EDB7CD /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF851D422DA93E800EDB7CD /* InterfaceController.swift */; };
+		CEF851D722DA93E800EDB7CD /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF851D622DA93E800EDB7CD /* ExtensionDelegate.swift */; };
+		CEF851D922DA93E800EDB7CD /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF851D822DA93E800EDB7CD /* NotificationController.swift */; };
+		CEF851DB22DA93E800EDB7CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEF851DA22DA93E800EDB7CD /* Assets.xcassets */; };
+		CEF851E022DA93E800EDB7CD /* MemorizeThis.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CEF851C322DA93E700EDB7CD /* MemorizeThis.app */; };
+		CEF851E922DAC56C00EDB7CD /* StartInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF851E822DAC56C00EDB7CD /* StartInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CEF8519822DA4C7300EDB7CD /* PBXContainerItemProxy */ = {
+		CEF851D122DA93E800EDB7CD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CEF8517C22DA4C7300EDB7CD /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CEF8519522DA4C7300EDB7CD;
-			remoteInfo = "WearableTest WatchKit App";
+			remoteGlobalIDString = CEF851CE22DA93E800EDB7CD;
+			remoteInfo = "MemorizeThis Extension";
 		};
-		CEF851A722DA4C7400EDB7CD /* PBXContainerItemProxy */ = {
+		CEF851DE22DA93E800EDB7CD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CEF8517C22DA4C7300EDB7CD /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CEF851A422DA4C7400EDB7CD;
-			remoteInfo = "WearableTest WatchKit Extension";
+			remoteGlobalIDString = CEF851C222DA93E700EDB7CD;
+			remoteInfo = MemorizeThis;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		CEF851B922DA4C7500EDB7CD /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				CEF851A622DA4C7400EDB7CD /* WearableTest WatchKit Extension.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		CEF851BD22DA4C7500EDB7CD /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				CEF8519722DA4C7300EDB7CD /* WearableTest WatchKit App.app in Embed Watch Content */,
+				CEF851E022DA93E800EDB7CD /* MemorizeThis.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEF851E422DA93E800EDB7CD /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CEF851D022DA93E800EDB7CD /* MemorizeThis Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -72,17 +73,18 @@
 		CEF8518E22DA4C7300EDB7CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEF8519122DA4C7300EDB7CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEF8519322DA4C7300EDB7CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CEF8519622DA4C7300EDB7CD /* WearableTest WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WearableTest WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEF8519C22DA4C7300EDB7CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		CEF8519E22DA4C7400EDB7CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CEF851A022DA4C7400EDB7CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CEF851A522DA4C7400EDB7CD /* WearableTest WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WearableTest WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEF851AA22DA4C7400EDB7CD /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
-		CEF851AC22DA4C7400EDB7CD /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		CEF851AE22DA4C7400EDB7CD /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
-		CEF851B022DA4C7500EDB7CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CEF851B222DA4C7500EDB7CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CEF851B322DA4C7500EDB7CD /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		CEF851C322DA93E700EDB7CD /* MemorizeThis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemorizeThis.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEF851C622DA93E700EDB7CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		CEF851C822DA93E800EDB7CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEF851CA22DA93E800EDB7CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEF851CF22DA93E800EDB7CD /* MemorizeThis Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MemorizeThis Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEF851D422DA93E800EDB7CD /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		CEF851D622DA93E800EDB7CD /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		CEF851D822DA93E800EDB7CD /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		CEF851DA22DA93E800EDB7CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEF851DC22DA93E800EDB7CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEF851DD22DA93E800EDB7CD /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		CEF851E822DAC56C00EDB7CD /* StartInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +95,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CEF851A222DA4C7400EDB7CD /* Frameworks */ = {
+		CEF851CC22DA93E800EDB7CD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -107,8 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				CEF8518622DA4C7300EDB7CD /* WearableTest */,
-				CEF8519A22DA4C7300EDB7CD /* WearableTest WatchKit App */,
-				CEF851A922DA4C7400EDB7CD /* WearableTest WatchKit Extension */,
+				CEF851C422DA93E700EDB7CD /* MemorizeThis */,
+				CEF851D322DA93E800EDB7CD /* MemorizeThis Extension */,
 				CEF8518522DA4C7300EDB7CD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -117,8 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				CEF8518422DA4C7300EDB7CD /* WearableTest.app */,
-				CEF8519622DA4C7300EDB7CD /* WearableTest WatchKit App.app */,
-				CEF851A522DA4C7400EDB7CD /* WearableTest WatchKit Extension.appex */,
+				CEF851C322DA93E700EDB7CD /* MemorizeThis.app */,
+				CEF851CF22DA93E800EDB7CD /* MemorizeThis Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,27 +138,28 @@
 			path = WearableTest;
 			sourceTree = "<group>";
 		};
-		CEF8519A22DA4C7300EDB7CD /* WearableTest WatchKit App */ = {
+		CEF851C422DA93E700EDB7CD /* MemorizeThis */ = {
 			isa = PBXGroup;
 			children = (
-				CEF8519B22DA4C7300EDB7CD /* Interface.storyboard */,
-				CEF8519E22DA4C7400EDB7CD /* Assets.xcassets */,
-				CEF851A022DA4C7400EDB7CD /* Info.plist */,
+				CEF851C522DA93E700EDB7CD /* Interface.storyboard */,
+				CEF851C822DA93E800EDB7CD /* Assets.xcassets */,
+				CEF851CA22DA93E800EDB7CD /* Info.plist */,
 			);
-			path = "WearableTest WatchKit App";
+			path = MemorizeThis;
 			sourceTree = "<group>";
 		};
-		CEF851A922DA4C7400EDB7CD /* WearableTest WatchKit Extension */ = {
+		CEF851D322DA93E800EDB7CD /* MemorizeThis Extension */ = {
 			isa = PBXGroup;
 			children = (
-				CEF851AA22DA4C7400EDB7CD /* InterfaceController.swift */,
-				CEF851AC22DA4C7400EDB7CD /* ExtensionDelegate.swift */,
-				CEF851AE22DA4C7400EDB7CD /* NotificationController.swift */,
-				CEF851B022DA4C7500EDB7CD /* Assets.xcassets */,
-				CEF851B222DA4C7500EDB7CD /* Info.plist */,
-				CEF851B322DA4C7500EDB7CD /* PushNotificationPayload.apns */,
+				CEF851D422DA93E800EDB7CD /* InterfaceController.swift */,
+				CEF851E822DAC56C00EDB7CD /* StartInterfaceController.swift */,
+				CEF851D622DA93E800EDB7CD /* ExtensionDelegate.swift */,
+				CEF851D822DA93E800EDB7CD /* NotificationController.swift */,
+				CEF851DA22DA93E800EDB7CD /* Assets.xcassets */,
+				CEF851DC22DA93E800EDB7CD /* Info.plist */,
+				CEF851DD22DA93E800EDB7CD /* PushNotificationPayload.apns */,
 			);
-			path = "WearableTest WatchKit Extension";
+			path = "MemorizeThis Extension";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,45 +177,45 @@
 			buildRules = (
 			);
 			dependencies = (
-				CEF8519922DA4C7300EDB7CD /* PBXTargetDependency */,
+				CEF851DF22DA93E800EDB7CD /* PBXTargetDependency */,
 			);
 			name = WearableTest;
 			productName = WearableTest;
 			productReference = CEF8518422DA4C7300EDB7CD /* WearableTest.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CEF8519522DA4C7300EDB7CD /* WearableTest WatchKit App */ = {
+		CEF851C222DA93E700EDB7CD /* MemorizeThis */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CEF851BA22DA4C7500EDB7CD /* Build configuration list for PBXNativeTarget "WearableTest WatchKit App" */;
+			buildConfigurationList = CEF851E522DA93E800EDB7CD /* Build configuration list for PBXNativeTarget "MemorizeThis" */;
 			buildPhases = (
-				CEF8519422DA4C7300EDB7CD /* Resources */,
-				CEF851B922DA4C7500EDB7CD /* Embed App Extensions */,
+				CEF851C122DA93E700EDB7CD /* Resources */,
+				CEF851E422DA93E800EDB7CD /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CEF851A822DA4C7400EDB7CD /* PBXTargetDependency */,
+				CEF851D222DA93E800EDB7CD /* PBXTargetDependency */,
 			);
-			name = "WearableTest WatchKit App";
-			productName = "WearableTest WatchKit App";
-			productReference = CEF8519622DA4C7300EDB7CD /* WearableTest WatchKit App.app */;
+			name = MemorizeThis;
+			productName = MemorizeThis;
+			productReference = CEF851C322DA93E700EDB7CD /* MemorizeThis.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
-		CEF851A422DA4C7400EDB7CD /* WearableTest WatchKit Extension */ = {
+		CEF851CE22DA93E800EDB7CD /* MemorizeThis Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CEF851B622DA4C7500EDB7CD /* Build configuration list for PBXNativeTarget "WearableTest WatchKit Extension" */;
+			buildConfigurationList = CEF851E122DA93E800EDB7CD /* Build configuration list for PBXNativeTarget "MemorizeThis Extension" */;
 			buildPhases = (
-				CEF851A122DA4C7400EDB7CD /* Sources */,
-				CEF851A222DA4C7400EDB7CD /* Frameworks */,
-				CEF851A322DA4C7400EDB7CD /* Resources */,
+				CEF851CB22DA93E800EDB7CD /* Sources */,
+				CEF851CC22DA93E800EDB7CD /* Frameworks */,
+				CEF851CD22DA93E800EDB7CD /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "WearableTest WatchKit Extension";
-			productName = "WearableTest WatchKit Extension";
-			productReference = CEF851A522DA4C7400EDB7CD /* WearableTest WatchKit Extension.appex */;
+			name = "MemorizeThis Extension";
+			productName = "MemorizeThis Extension";
+			productReference = CEF851CF22DA93E800EDB7CD /* MemorizeThis Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
@@ -228,10 +231,10 @@
 					CEF8518322DA4C7300EDB7CD = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
-					CEF8519522DA4C7300EDB7CD = {
+					CEF851C222DA93E700EDB7CD = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
-					CEF851A422DA4C7400EDB7CD = {
+					CEF851CE22DA93E800EDB7CD = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
 				};
@@ -250,8 +253,8 @@
 			projectRoot = "";
 			targets = (
 				CEF8518322DA4C7300EDB7CD /* WearableTest */,
-				CEF8519522DA4C7300EDB7CD /* WearableTest WatchKit App */,
-				CEF851A422DA4C7400EDB7CD /* WearableTest WatchKit Extension */,
+				CEF851C222DA93E700EDB7CD /* MemorizeThis */,
+				CEF851CE22DA93E800EDB7CD /* MemorizeThis Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -267,20 +270,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CEF8519422DA4C7300EDB7CD /* Resources */ = {
+		CEF851C122DA93E700EDB7CD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEF8519F22DA4C7400EDB7CD /* Assets.xcassets in Resources */,
-				CEF8519D22DA4C7300EDB7CD /* Interface.storyboard in Resources */,
+				CEF851C922DA93E800EDB7CD /* Assets.xcassets in Resources */,
+				CEF851C722DA93E700EDB7CD /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CEF851A322DA4C7400EDB7CD /* Resources */ = {
+		CEF851CD22DA93E800EDB7CD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEF851B122DA4C7500EDB7CD /* Assets.xcassets in Resources */,
+				CEF851DB22DA93E800EDB7CD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,28 +299,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CEF851A122DA4C7400EDB7CD /* Sources */ = {
+		CEF851CB22DA93E800EDB7CD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEF851AF22DA4C7400EDB7CD /* NotificationController.swift in Sources */,
-				CEF851AD22DA4C7400EDB7CD /* ExtensionDelegate.swift in Sources */,
-				CEF851AB22DA4C7400EDB7CD /* InterfaceController.swift in Sources */,
+				CEF851E922DAC56C00EDB7CD /* StartInterfaceController.swift in Sources */,
+				CEF851D922DA93E800EDB7CD /* NotificationController.swift in Sources */,
+				CEF851D722DA93E800EDB7CD /* ExtensionDelegate.swift in Sources */,
+				CEF851D522DA93E800EDB7CD /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CEF8519922DA4C7300EDB7CD /* PBXTargetDependency */ = {
+		CEF851D222DA93E800EDB7CD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CEF8519522DA4C7300EDB7CD /* WearableTest WatchKit App */;
-			targetProxy = CEF8519822DA4C7300EDB7CD /* PBXContainerItemProxy */;
+			target = CEF851CE22DA93E800EDB7CD /* MemorizeThis Extension */;
+			targetProxy = CEF851D122DA93E800EDB7CD /* PBXContainerItemProxy */;
 		};
-		CEF851A822DA4C7400EDB7CD /* PBXTargetDependency */ = {
+		CEF851DF22DA93E800EDB7CD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CEF851A422DA4C7400EDB7CD /* WearableTest WatchKit Extension */;
-			targetProxy = CEF851A722DA4C7400EDB7CD /* PBXContainerItemProxy */;
+			target = CEF851C222DA93E700EDB7CD /* MemorizeThis */;
+			targetProxy = CEF851DE22DA93E800EDB7CD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -338,10 +342,10 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		CEF8519B22DA4C7300EDB7CD /* Interface.storyboard */ = {
+		CEF851C522DA93E700EDB7CD /* Interface.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CEF8519C22DA4C7300EDB7CD /* Base */,
+				CEF851C622DA93E700EDB7CD /* Base */,
 			);
 			name = Interface.storyboard;
 			sourceTree = "<group>";
@@ -465,84 +469,6 @@
 			};
 			name = Release;
 		};
-		CEF851B722DA4C7500EDB7CD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "WearableTest WatchKit Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mitali.WearableTest.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.2;
-			};
-			name = Debug;
-		};
-		CEF851B822DA4C7500EDB7CD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "WearableTest WatchKit Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mitali.WearableTest.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.2;
-			};
-			name = Release;
-		};
-		CEF851BB22DA4C7500EDB7CD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				IBSC_MODULE = WearableTest_WatchKit_Extension;
-				INFOPLIST_FILE = "WearableTest WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mitali.WearableTest.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.2;
-			};
-			name = Debug;
-		};
-		CEF851BC22DA4C7500EDB7CD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				IBSC_MODULE = WearableTest_WatchKit_Extension;
-				INFOPLIST_FILE = "WearableTest WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mitali.WearableTest.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.2;
-			};
-			name = Release;
-		};
 		CEF851BF22DA4C7500EDB7CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -577,6 +503,84 @@
 			};
 			name = Release;
 		};
+		CEF851E222DA93E800EDB7CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MemorizeThis Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mitali.WearableTest.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Debug;
+		};
+		CEF851E322DA93E800EDB7CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MemorizeThis Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mitali.WearableTest.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Release;
+		};
+		CEF851E622DA93E800EDB7CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = MemorizeThis_Extension;
+				INFOPLIST_FILE = MemorizeThis/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mitali.WearableTest.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Debug;
+		};
+		CEF851E722DA93E800EDB7CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = MemorizeThis_Extension;
+				INFOPLIST_FILE = MemorizeThis/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mitali.WearableTest.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -589,29 +593,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CEF851B622DA4C7500EDB7CD /* Build configuration list for PBXNativeTarget "WearableTest WatchKit Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CEF851B722DA4C7500EDB7CD /* Debug */,
-				CEF851B822DA4C7500EDB7CD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CEF851BA22DA4C7500EDB7CD /* Build configuration list for PBXNativeTarget "WearableTest WatchKit App" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CEF851BB22DA4C7500EDB7CD /* Debug */,
-				CEF851BC22DA4C7500EDB7CD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		CEF851BE22DA4C7500EDB7CD /* Build configuration list for PBXNativeTarget "WearableTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CEF851BF22DA4C7500EDB7CD /* Debug */,
 				CEF851C022DA4C7500EDB7CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEF851E122DA93E800EDB7CD /* Build configuration list for PBXNativeTarget "MemorizeThis Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEF851E222DA93E800EDB7CD /* Debug */,
+				CEF851E322DA93E800EDB7CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEF851E522DA93E800EDB7CD /* Build configuration list for PBXNativeTarget "MemorizeThis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEF851E622DA93E800EDB7CD /* Debug */,
+				CEF851E722DA93E800EDB7CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

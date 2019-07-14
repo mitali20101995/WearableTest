@@ -7,16 +7,11 @@
 //
 
 import UIKit
+import WatchConnectivity
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, WCSessionDelegate {
     
     var inputSequence : [Int] = []
-    var givenSequence : [Int] = []
-    
-    @IBOutlet weak var imgView1: UIImageView!
-    @IBOutlet weak var imgView2: UIImageView!
-    @IBOutlet weak var imgView3: UIImageView!
-    @IBOutlet weak var imgView4: UIImageView!
     
     @IBOutlet weak var btn1: UIButton!
     @IBOutlet weak var btn2: UIButton!
@@ -26,80 +21,64 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
-        setPattern()
+        if (WCSession.isSupported()) {
+            print("PHONE: Supports SESSION!")
+            let session = WCSession.default
+            session.delegate = self
+            session.activate()
+        }
+        else {
+            print("PHONE: Does NOT support SESSION")
+        }
+        
+//        setPattern()
     }
 
     @IBAction func inpBtn1Clicked(_ sender: Any) {
-        inputSequence.append(1)
-        checkResult()
+        checkInput(input: 1)
     }
     @IBAction func inpBtn2Clicked(_ sender: Any) {
-        inputSequence.append(2)
-        checkResult()
+        checkInput(input: 2)
     }
     @IBAction func inpBtn3Clicked(_ sender: Any) {
-        inputSequence.append(3)
-        checkResult()
+        checkInput(input: 3)
     }
     @IBAction func inpBtn4Clicked(_ sender: Any) {
-        inputSequence.append(4)
-        checkResult()
+        checkInput(input: 4)
     }
     
-    func checkResult(){
-        print("Given: ", givenSequence)
-        print("Input: ", inputSequence)
+    func checkInput(input: Int) {
+        inputSequence.append(input)
+        
         let inputSeqLength = inputSequence.count
-        let givenSeqLength = givenSequence.count
-        let recentInputIndex = inputSeqLength - 1
-        let recentInput = inputSequence[recentInputIndex]
-        let expectedInput = givenSequence[recentInputIndex]
-        
-        if(recentInput != expectedInput){
-            print("Lose")
-            setPattern()
-        }
-        
-        else if(inputSeqLength == givenSeqLength){
-            print("Won")
-            setPattern()
-        }
-    }
-    
-    func setPattern(){
-        givenSequence = makeList(4)
-        inputSequence = []
-        
-        btn1.isHidden = true
-        btn2.isHidden = true
-        btn3.isHidden = true
-        btn4.isHidden = true
-        
-        imgView1.image = UIImage(named: String(givenSequence[0]));
-        imgView2.image = UIImage(named: String(givenSequence[1]));
-        imgView3.image = UIImage(named: String(givenSequence[2]));
-        imgView4.image = UIImage(named: String(givenSequence[3]));
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
-            self.imgView1.image = nil
-            self.imgView2.image = nil
-            self.imgView3.image = nil
-            self.imgView4.image = nil
+        if(inputSeqLength == 4){
+            if (WCSession.default.isReachable) {
+                print("PHONE: Phone found the watch")
+                
+                let message = [
+                    "data": inputSequence
+                ]
+                
+                WCSession.default.sendMessage(message, replyHandler:nil)
+                print("PHONE: Sent the data!")
+            }
+            else {
+                print("PHONE: Cannot find the watch")
+            }
+            inputSequence = []
             
-            self.btn1.isHidden = false
-            self.btn2.isHidden = false
-            self.btn3.isHidden = false
-            self.btn4.isHidden = false
         }
     }
     
-    func makeList(_ n: Int) -> [Int] {
-        return (0..<n).map {_
-            in .random(in: 1...4)
-        }
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
     }
+    func sessionDidBecomeInactive(_ session: WCSession) {
+    }
+    
+    func sessionDidDeactivate(_ session: WCSession) {
+    }
+    
 }
 
 
